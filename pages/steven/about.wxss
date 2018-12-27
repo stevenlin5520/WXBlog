@@ -1,0 +1,16 @@
+/* pages/steven/about.wxss */
+.container{
+	width: 100%;
+	height: 100%;
+	background: #f35;
+}
+.top{
+	width:300rpx;
+	height:300rpx;
+  background: #5fe;
+	background-image: "../../assets/images/bgimg.jpg";
+}
+.touxiang{
+	width: 100rpx;
+	height: 100rpx;
+}

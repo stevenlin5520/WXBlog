@@ -1,0 +1,7 @@
+<!--pages/steven/about.wxml-->
+<text>pages/steven/about.wxml</text>
+<view class="container">
+	<view class="top">
+    	<image class="touxiang" src="../../assets/images/touxiang.jpg" mode="scaleToFill"></image>
+    </view>
+</view>

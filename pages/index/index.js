@@ -15,6 +15,7 @@ Page({
       url: '../logs/logs'
     })
   },
+  
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -50,5 +51,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  
 })

@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/steven/about",
+    "pages/steven/index",
+    "pages/steven/order",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -8,5 +11,26 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/steven/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/steven/order",
+        "text": "排行"
+      },
+      {
+        "pagePath": "pages/steven/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
