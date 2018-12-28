@@ -1,2 +1,29 @@
 <!--pages/steven/index.wxml-->
-<text>pages/steven/index.wxml</text>
+<scroll-view class="body" scroll-y="true" style="height: auto;">
+	<view class="top">
+		<scroll-view class="scrollx" scroll-x="true" scroll-with-animation="true" bindscroll="scroll" style="height:100%;">
+			<view wx:for="{{tab}}" class="scrollx-item" wx:key="tab" >{{item}}</view>
+			<!-- <block wx:for="{{tab}}">
+				<text class="scrollx-item" >{{item}}</text>	
+			</block> -->
+		</scroll-view>
+	</view>
+	<view class="content">
+		<scroll-view class="scrollx2" scroll-x="true" bindscroll="scroll" style="height:100%;width:100%;">
+			<block wx:for="{{initdata}}" class="scrollx2-item" wx:key="initdata" >
+				<view class="cont-item">
+					<image class="cont-item img" src="{{item.img}}" mode="scaleToFill"></image>
+					<view class="cont-item right">
+						<view class="cont-item right title">{{item.title}}</view>
+						<view class="cont-item right date">{{item.date}}</view>
+					</view>
+				</view>
+			</block>
+			<view class="scrollx2-item">Text1</view>
+			<view class="scrollx2-item">Text2</view>
+			<view class="scrollx2-item">Text3</view>
+			<view class="scrollx2-item">Text4</view>
+			<view class="scrollx2-item">Text5</view>
+		</scroll-view>
+	</view>
+</scroll-view>

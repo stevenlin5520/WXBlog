@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    tab:["Java","Html","Python","JSON","Oracle","Mysql","Nginx"],
+    initdata:[
+      {img:"../../assets/images/bgimg.jpg",title:"Java标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"Html标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"Python标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"JSON标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"Oracle标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"Mysql标题。。。。",date:"2018-12-12"},
+      {img:"../../assets/images/bgimg.jpg",title:"Nginx标题。。。。",date:"2018-12-12"},
 
+    ]
   },
 
   /**

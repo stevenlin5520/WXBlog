@@ -1,7 +1,17 @@
 <!--pages/steven/about.wxml-->
-<text>pages/steven/about.wxml</text>
-<view class="container">
+<view class="body">
 	<view class="top">
-    	<image class="touxiang" src="../../assets/images/touxiang.jpg" mode="scaleToFill"></image>
+		<view class="left">周润发（Chow Yun Fat），1955年5月18日出生在香港南丫岛，籍贯广东开平，中国影视演员、摄影家，国家一级演员</view>
+    <view class="right">
+		  <image class="right touxiang" src="../../assets/images/touxiang.jpg" mode="scaleToFill"></image>
+		  <view class="right nickname">我叫小可爱</view>
     </view>
+	</view>
+	<view class="bottom">
+		<view class="content">
+			<textarea class="textarea">
+				小程序是一种不用下载就能使用的应用，也是一项门槛非常高的创新，经过将近两年的发展，已经构造了新的小程序开发环境和开发者生态。小程序也是这么多年来中国IT行业里一个真正能够影响到普通程序员的创新成果，现在已经有超过150万的开发者加入到了小程序的开发，与我们一起共同发力推动小程序的发展，小程序应用数量超过了一百万，覆盖200多个细分的行业，日活用户达到两个亿，小程序还在许多城市实现了支持地铁、公交服务。小程序发展带来更多的就业机会，2017年小程序带动就业104万人，社会效应不断提升。
+			</textarea>
+		</view>
+	</view>
 </view>

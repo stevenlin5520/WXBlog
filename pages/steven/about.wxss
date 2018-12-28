@@ -1,16 +1,66 @@
 /* pages/steven/about.wxss */
-.container{
+page{
 	width: 100%;
 	height: 100%;
-	background: #f35;
+	background: rgb(131, 235, 110);
+}
+.body{
+	display:flex;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	width: auto;
+	height: 100%;
 }
 .top{
-	width:300rpx;
+	display:flex;
+	align-items: flex-start;
+	flex-direction: row;
+	width:100%;
 	height:300rpx;
-  background: #5fe;
+	background: #5fe;
 	background-image: "../../assets/images/bgimg.jpg";
+  margin-top:20rpx;
 }
-.touxiang{
-	width: 100rpx;
-	height: 100rpx;
+.left{
+	height: 100%;
+	width:65%;
+	/* background: #54f; */
+  font-size: 30rpx;
+  padding: 0 10rpx 0 10rpx;
+}
+.right{
+	height: 100%;
+	width:35%;
+	background: pink;
+}
+.right .touxiang{
+	width: 130rpx;
+	height: 130rpx;
+	margin-left: 30rpx;
+	margin-top: 20rpx;
+}
+.right .nickname{
+	width: auto;
+	height:auto;
+	margin-left: 30rpx;
+	margin-top: 0rpx;
+	/* background: #f2e; */
+}
+.bottom{
+	margin-top: 30rpx;
+	width: 100%;
+	height: 100%;
+	/* background: #f34; */
+  padding: 10rpx;
+}
+.content{
+	/* background: pink; */
+}
+.textarea{
+	width: 100%;
+	height: 100%;
+	font-size: 35rpx;
+	/* background: #84f; */
 }
