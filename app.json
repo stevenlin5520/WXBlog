@@ -1,10 +1,14 @@
 {
   "pages":[
+    "pages/steven/order",
+    "pages/api/index",
+    "pages/api/picker",
+    "pages/api/pickerview",
     "pages/steven/about",
     "pages/steven/index",
-    "pages/steven/order",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "global/error/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -29,6 +33,7 @@
     ]
   },
   "networkTimeout": {
+
     "request": 10000,
     "downloadFile": 10000
   },

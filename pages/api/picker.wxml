@@ -1,0 +1,39 @@
+<!--pages/api/picker.wxml-->
+<text>pages/api/picker.wxml</text>
+<view class="body">
+	<view class="item" style="margin-top:30rpx;" >
+		<view>地区选择器(一级选择)</view>
+		<view style="display:flex;width:100%;background:grey;">
+			<view style="width:20%;">当前：</view>
+			<view style="width:80%;">
+				<picker value="{{index}}" range="{{array}}"  bindchange="changePicker">
+					<view>{{array[index]}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+
+	<view class="item" style="margin-top:30rpx;" >
+		<view>时间选择器(二级选择)</view>
+		<view style="display:flex;width:100%;background:grey;">
+			<view style="width:20%;">当前：</view>
+			<view style="width:80%;">
+				<picker mode="time" value="{{time}}" start="9:00" end="21:01" bindchange="changeTimePicker">
+					<view>{{time}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+
+	<view class="item" style="margin-top:30rpx;" >
+		<view>日期选择器(三级选择)</view>
+		<view style="display:flex;width:100%;background:grey;">
+			<view style="width:20%;">当前：</view>
+			<view style="width:80%;">
+				<picker mode="date" start="1999-12-1" end="2020-12-31" value="{{date}}" bindchange="changeDatePicker">
+					<view>{{date}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
+</view>

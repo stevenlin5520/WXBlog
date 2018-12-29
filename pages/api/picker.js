@@ -1,18 +1,21 @@
-// pages/steven/order.js
+// pages/api/picker.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    array: ['中国', '美国', '巴西', '日本'],
+    index: 0,
+    date: '2016-09-01',
+    time: '12:01'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -63,9 +66,26 @@ Page({
   onShareAppMessage: function () {
 
   },
+  
+  changePicker(e){
+    console.log("地区选择器传过来的值",e);
+    this.setData({
+      index: e.detail.value
+    })
+  },
 
-  workerFun(){
-    con = sb
-    console.log("主动出错，走全局的出错路径")
+  changeTimePicker(e){
+    console.log("时间选择器传过来的值",e);
+    this.setData({
+      time: e.detail.value
+    })
+  }, 
+
+  changeDatePicker(e){
+    console.log("日期选择器传过来的值",e);
+    this.setData({
+      date: e.detail.value
+    })
   }
+
 })

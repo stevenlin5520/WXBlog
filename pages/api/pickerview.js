@@ -1,18 +1,39 @@
-// pages/steven/order.js
+// pages/api/pickerview.js
+const date = new Date()
+const years = []
+const months = []
+const days = []
+for (let i = 1990; i <= date.getFullYear(); i++) {
+  years.push(i)
+}
+for (let i = 1; i <= 12; i++) {
+  months.push(i)
+}
+for (let i = 1; i <= 31; i++) {
+  days.push(i)
+}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    years,
+    year: date.getFullYear(),
+    months,
+    month: 2,
+    days,
+    day: 2,
+    value: [9999, 1, 1],
+    isDaytime: true,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -63,9 +84,14 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  workerFun(){
-    con = sb
-    console.log("主动出错，走全局的出错路径")
+  bindChange(e){
+    console.log("picker-view发过来的消息",e)
+    const data = e.detail.value
+    this.setData({
+      year: this.data.years[data[0]],
+      month: this.data.months[data[1]],
+      day: this.data.days[data[2]],
+      isDaytime: !data[3]
+    })
   }
 })

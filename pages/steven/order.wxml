@@ -1,3 +1,22 @@
 <!--pages/steven/order.wxml-->
-<text>pages/steven/order.wxml</text>
+<view class="body">
+	<navigator url="../api/index" open-type="navigate">
+		<button >进入Swiper组件</button>
+	</navigator>
+
+	<navigator url="../api/picker" open-type="navigate">
+		<button >进入Picker组件</button>
+	</navigator>
+
+	<navigator url="../api/pickerview" open-type="navigate">
+		<button >进入Picker-view组件</button>
+	</navigator>
+
+	<navigator url="../api/pickerview" open-type="navigate">
+		<button >进入多种输入框界面</button>
+	</navigator>
+
+	<button bind:tap="workerFun">进入Worker</button>
+</view>
+
 

@@ -1,0 +1,26 @@
+<!--pages/api/index.wxml-->
+<text>pages/api/index.wxml</text>
+
+<view class="body">
+	<swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{background}}" wx:key="*this">
+			<swiper-item style="background:{{item}};">{{item}}</swiper-item>
+		</block>
+	</swiper>
+
+	<view style="display:flex;margin-top:50rpx;width:100%;">
+		<view style="width:80%;">指示点</view>
+		<switch style="width:20%;" checked="{{indicator}}" bindchange="changeIndicator"></switch>
+	</view>
+
+	<view style="display:flex;margin-top:50rpx;width:100%;">
+		<view style="width:80%;">自动播放</view>
+		<switch style="width:20%;" checked="{{autoplay}}" bindchange="changeAutoplay"></switch>
+	</view>
+
+	<view style="display:flex;margin-top:50rpx;width:100%;">
+		<view style="width:80%;">自动播放时间间隔(ms)</view>
+		<view style="width:20%;">{{interval}}</view>
+	</view>
+	<slider bindchange="changeInterval" value="{{interval}}" min="1000" max="10000"></slider>
+</view>

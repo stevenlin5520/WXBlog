@@ -1,4 +1,5 @@
 //app.js
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,7 +34,14 @@ App({
       }
     })
   },
+  //app出错路径
+  onError:function(res){
+    console.log("全局出错配置出错",res)
+    wx.navigateTo({
+      url: '/global/error/index'
+    })
+  },
   globalData: {
-    userInfo: null
+    userInfo: null,
   }
 })

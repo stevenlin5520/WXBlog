@@ -1,0 +1,6 @@
+<!--global/error/index.wxml-->
+<text>global/error/index.wxml</text>
+<view style="display:block;align-items:center;">
+	<image src="../../assets/images/touxiang.jpg" mode="scaleToFill"></image>
+	<view>全局程序出错目录</view>
+</view>

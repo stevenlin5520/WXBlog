@@ -1,4 +1,4 @@
-// pages/steven/order.js
+// global/error/index.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -62,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  workerFun(){
-    con = sb
-    console.log("主动出错，走全局的出错路径")
   }
 })
