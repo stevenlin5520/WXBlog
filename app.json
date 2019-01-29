@@ -1,6 +1,8 @@
 {
-  "pages":[
+  "pages": [
     "pages/steven/order",
+    "pages/region/index",
+    "pages/live/index",
     "pages/api/index",
     "pages/api/picker",
     "pages/api/pickerview",
@@ -8,13 +10,14 @@
     "pages/steven/index",
     "pages/index/index",
     "pages/logs/logs",
-    "global/error/index"
+    "global/error/index",
+    "pages/api/video"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -33,7 +36,6 @@
     ]
   },
   "networkTimeout": {
-
     "request": 10000,
     "downloadFile": 10000
   },

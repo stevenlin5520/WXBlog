@@ -1,0 +1,6 @@
+<video class="video" id="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" show-play-btn='{{false}}' show-center-play-btn='{{true}}' controls enable-danmu='true' danmu-btn="{{true}}" danmu-list="{{danmulist}}" binderror="videoErrorCallback"></video>
+<view class="danmu">
+	<view style="width:30%;">弹幕内容:</view>
+	<input style="width:70%;" bindblur="bindInputBlur" type="text" placeholder="再次输入弹幕内容！"></input>
+</view>
+<button type="primary" bind:tap="sendMsg" style="width:80%;align:center;margin-top:50rpx;">发送弹幕</button>

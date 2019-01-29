@@ -16,7 +16,21 @@
 		<button >进入多种输入框界面</button>
 	</navigator>
 
+	<navigator url="../api/video" open-type="navigate">
+		<button>进入Video界面</button>
+	</navigator>
+
 	<button bind:tap="workerFun">进入Worker</button>
+
+  <navigator url="/pages/live/index" open-type='navigate'>
+    <button>视频直播</button>
+  </navigator>
+
+  <navigator url="/pages/region/index" open-type='navigate'>
+    <button>地区选择</button>
+  </navigator>
+
+  <image src="http://47.105.200.249/sksydistfile/e01aa381-9621-4c41-884d-c58d663efabc.jpg" style="width:400rpx;height:400rpx;"></image>
 </view>
 
 
