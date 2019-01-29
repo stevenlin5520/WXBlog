@@ -30,7 +30,10 @@
     <button>地区选择</button>
   </navigator>
 
-  <image src="http://47.105.200.249/sksydistfile/e01aa381-9621-4c41-884d-c58d663efabc.jpg" style="width:400rpx;height:400rpx;"></image>
+  <navigator url="/pages/onfire/index" open-type='navigate'>
+    <button>订阅事件</button>
+  </navigator>
+  <!-- <image src="http://47.105.200.249/sksydistfile/e01aa381-9621-4c41-884d-c58d663efabc.jpg" style="width:400rpx;height:400rpx;"></image> -->
 </view>
 
 

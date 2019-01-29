@@ -1,32 +1,19 @@
-// pages/steven/order.js
+// pages/onfire/index.js
 let onfire = require("../../utils/onfire1.0.6.js")
-let self = this
-let eventOn = onfire.on('onfire-on', function (data,data2) {
-  console.log('onfire页面的回调函数on', data, data2)
-})
-let eventOne = onfire.one('onfire-one', function (data) {
-  console.log('onfire页面的回调函数one', data)
-})
-let eventSync = onfire.one('onfire-sync', function (data) {
-  console.log('onfire页面的同步订阅时间', data)
-  // 清空所有事件
-  // onfire.clear()
-})
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    topData: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -54,10 +41,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    // 取消订阅事件的绑定
-    onfire.un(eventOn)
-    onfire.un('event-one')
-    onfire.un(eventSync)
     
   },
 
@@ -82,8 +65,18 @@ Page({
 
   },
 
-  workerFun(){
-    con = sb
-    console.log("主动出错，走全局的出错路径")
+  // 返回上一级数据
+  returnData(){
+    console.log("返回上一级数据,测试on")
+    onfire.fire('onfire-on','你好，小苹果!','好好吃')
+    onfire.fire('onfire-on', '你好，小白痴!', '好好吃2')
+
+    console.log("返回上一级数据,测试one")
+    onfire.fire('onfire-one', '大白兔！')
+    onfire.fire('onfire-one', '大白痴！')
+
+    console.log("返回上一级数据,测试one,使用同步订阅fireSync")
+    onfire.fireSync('onfire-sync', '同步订阅数据发往回调函数')
+
   }
 })

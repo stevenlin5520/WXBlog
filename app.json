@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/steven/order",
+    "pages/onfire/index",
     "pages/region/index",
     "pages/live/index",
     "pages/api/index",
