@@ -1,12 +1,13 @@
-// pages/onfire/index.js
-let onfire = require("../../utils/onfire1.0.6.js")
+// pages/tick/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    topData: [1]
+    data1:null,
+    data2:null,
+    data3:null
   },
 
   /**
@@ -27,7 +28,28 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.showNavigationBarLoading()
+    let self = this
+    wx.showLoading({
+      title: '',
+      mask: false
+    })
+
+    self.setData({
+      data1: "同步流程中执行data1",
+      data: 'data1'
+    })
+
+    wx.nextTick(function(){
+      self.setData({
+        data2: "同步流程的下一时间片执行data2",
+        data: 'data2'
+      })
+    })
+
+    self.setData({
+      data3: "同步流程中执行data3",
+      data: 'data3'
+    })
   },
 
   /**
@@ -41,7 +63,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
@@ -62,21 +84,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
-  },
-
-  // 返回上一级数据
-  returnData(){
-    console.log("返回上一级数据,测试on")
-    onfire.fire('onfire-on','你好，小苹果!','好好吃')
-    onfire.fire('onfire-on', '你好，小白痴!', '好好吃2')
-
-    console.log("返回上一级数据,测试one")
-    onfire.fire('onfire-one', '大白兔！')
-    onfire.fire('onfire-one', '大白痴！')
-
-    console.log("返回上一级数据,测试one,使用同步订阅fireSync")
-    onfire.fireSync('onfire-sync', '同步订阅数据发往回调函数')
 
   }
 })

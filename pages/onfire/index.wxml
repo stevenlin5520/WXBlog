@@ -1,4 +1,4 @@
 <!--pages/onfire/index.wxml-->
 <text>pages/onfire/index.wxml</text>
-<view>{{topData}}</view>
+<view style="background:{{topData.length>0 ? 'red':'pink' }};height:20rpx;"></view>
 <button catchtap='returnData'>返回100到上一页面</button>
