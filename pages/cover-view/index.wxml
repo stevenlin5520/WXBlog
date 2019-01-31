@@ -1,0 +1,28 @@
+<map
+  style='width:700rpx;height:700rpx'
+  latitude="{{latitude}}"
+  longitude="{{longitude}}">
+
+  <cover-view class="cover-view" hidden='{{dialogStatus}}'>
+
+    <cover-view class="cover-view top">
+      <cover-image class="cover-view top icon" src='../../assets/images/warn.png'></cover-image>
+      <cover-view style='width:50rpx;height:100%;'></cover-view>
+      <cover-view>请谨慎操作！</cover-view>
+    </cover-view>
+
+    <cover-view class="cover-view content">
+      可以提示一波！警告用户
+    </cover-view>
+
+    <cover-view class="cover-view bottom">
+      <button class="cover-view bottom btn">取消</button>
+      <button class="cover-view bottom btn">等一等</button>
+      <button class="cover-view bottom btn">确认</button>
+    </cover-view>
+
+  </cover-view>
+
+</map>
+
+<button class="switch" type='success' catchtap='switchDialog'>切换cover-view</button>

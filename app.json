@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/steven/order",
+    "pages/dialog/index",
+    "pages/cover-view/index",
     "pages/tick/index",
     "pages/onfire/index",
     "pages/region/index",

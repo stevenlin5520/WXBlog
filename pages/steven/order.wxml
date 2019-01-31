@@ -37,6 +37,15 @@
   <navigator url="/pages/tick/index" open-type='navigate'>
     <button>延迟到下一时间片执行</button>
   </navigator>
+
+  <navigator url="/pages/dialog/index" open-type='navigate'>
+    <button>玩玩模态框</button>
+  </navigator>
+
+  <navigator url="/pages/cover-view/index" open-type='navigate'>
+    <button>使用cover-view</button>
+  </navigator>
+
   <!-- <image src="http://47.105.200.249/sksydistfile/e01aa381-9621-4c41-884d-c58d663efabc.jpg" style="width:400rpx;height:400rpx;"></image> -->
 </view>
 

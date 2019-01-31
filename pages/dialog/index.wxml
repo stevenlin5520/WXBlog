@@ -1,0 +1,9 @@
+<view class="tishi">模态框内容显示如下</view>
+<view class="content">{{content}}</view>
+
+<button wx:if="{{!flag}}" class="bottomBtn" catchtap='inputEvent'>{{!flag? '输入数量':'关闭遮蔽层'}}</button>
+
+<view class="cont" wx:if="{{flag}}">
+  <input class="cont input" type='text' placeholder='甄安丽没良心啊！'></input>
+  <button class="bottomBtn" catchtap='inputEvent'>{{!flag? '输入数量':'关闭遮蔽层'}}</button>
+</view>
