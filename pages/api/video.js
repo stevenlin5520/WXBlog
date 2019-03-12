@@ -43,5 +43,9 @@ Page({
 	 		rgb.push(color)
 	 	}
 	 	return '#' + rgb.join('')
-	 }
+	 },
+
+  progressChange(res){
+    console.log(res)
+  }
 	})

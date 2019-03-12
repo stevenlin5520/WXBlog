@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/steven/order",
+    "pages/pay/index",
     "pages/dialog/index",
     "pages/cover-view/index",
     "pages/tick/index",

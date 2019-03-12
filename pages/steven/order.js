@@ -26,7 +26,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    let a = "2018-12-16 15:38:56"
+    console.log("整理数据:",a)
+    a = a.replace(/-/g,'/')
+    console.log("整理后数据:",a)
+    a = new Date(a).getTime()
+    console.log("整理后数据:", a)
+    a = a + 48 * 60 * 60 * 1000
+    console.log("整理后数据:", a)
+    a = new Date(a)
+    console.log("整理后数据:", a)
+
+    let dateUtil = require("../../utils/date_util.js")
+    console.log(dateUtil.plusTwoDay("2018-12-16 15:38:56"))
+
   },
 
   /**
@@ -40,6 +53,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    execute()
 
   },
 
@@ -87,3 +101,13 @@ Page({
     console.log("主动出错，走全局的出错路径")
   }
 })
+
+function execute(){
+  setTimeout(function () {
+    let randomLong = Math.floor(Math.random()*3000)
+    let randomWidth = Math.floor(Math.random()*2000)
+    console.log("生成随机数:" + randomLong + "," + randomWidth);
+    execute()
+  }, 1000)
+  
+}
